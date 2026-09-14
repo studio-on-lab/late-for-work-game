@@ -5,30 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>출근 지각왕 - 무료 출근길 점프 러닝 웹게임</title>
   <meta name="description" content="지각 1분 전! 출근길 장애물을 점프로 피하고 커피를 먹으며 최고 기록에 도전하세요. PC와 모바일에서 바로 즐기는 무료 미니 웹게임 출근 지각왕." />
-  <meta name="robots" content="index, follow" />
-  <meta name="googlebot" content="index, follow" />
+  <meta name="robots" content="index, follow" /><meta name="googlebot" content="index, follow" />
   <link rel="canonical" href="https://studio-on-lab.github.io/late-for-work-game/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="ko_KR" />
-  <meta property="og:title" content="출근 지각왕 - 무료 출근길 점프 러닝 웹게임" />
-  <meta property="og:description" content="지각 1분 전! 장애물을 피하고 최고 기록에 도전하는 간단한 무료 웹게임." />
-  <meta property="og:url" content="https://studio-on-lab.github.io/late-for-work-game/" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="출근 지각왕" />
-  <meta name="twitter:description" content="출근길 장애물을 피해 최고 기록에 도전하세요!" />
+  <meta property="og:type" content="website" /><meta property="og:locale" content="ko_KR" /><meta property="og:title" content="출근 지각왕 - 무료 출근길 점프 러닝 웹게임" /><meta property="og:description" content="지각 1분 전! 장애물을 피하고 최고 기록에 도전하는 간단한 무료 웹게임." /><meta property="og:url" content="https://studio-on-lab.github.io/late-for-work-game/" />
+  <meta name="twitter:card" content="summary" /><meta name="twitter:title" content="출근 지각왕" /><meta name="twitter:description" content="출근길 장애물을 피해 최고 기록에 도전하세요!" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <main class="page-shell">
     <section class="game-card" aria-label="출근 지각왕 게임">
       <header class="topbar"><div><p class="eyebrow">1분 순삭 출근 러닝게임</p><h1>출근 지각왕</h1></div><div class="scoreboard" aria-live="polite"><div><span>점수</span><strong id="score">0</strong></div><div><span>최고</span><strong id="bestScore">0</strong></div></div></header>
-      <div class="game-wrap">
-        <canvas id="gameCanvas" width="960" height="540" aria-label="출근 지각왕 게임 화면"></canvas>
-        <div id="startOverlay" class="overlay visible"><div class="overlay-panel"><p class="badge">08:59</p><h2>지각 1분 전!</h2><p>장애물을 점프로 피하고<br />커피를 먹어 보너스 점수를 챙기세요.</p><button id="startBtn" type="button">출근 시작</button><small>PC: Space / ↑ · 모바일: 화면 터치</small></div></div>
-        <div id="gameOverOverlay" class="overlay"><div class="overlay-panel"><p class="badge danger">지각!</p><h2>오늘도 늦었다…</h2><p>이번 기록 <strong id="finalScore">0</strong>점</p><button id="restartBtn" type="button">다시 뛰기</button></div></div>
-      </div>
+      <div class="game-wrap"><canvas id="gameCanvas" width="960" height="540" aria-label="출근 지각왕 게임 화면"></canvas><div id="startOverlay" class="overlay visible"><div class="overlay-panel"><p class="badge">08:59</p><h2>지각 1분 전!</h2><p>장애물을 점프로 피하고<br />커피를 먹어 보너스 점수를 챙기세요.</p><button id="startBtn" type="button">출근 시작</button><small>PC: Space / ↑ · 모바일: 화면 터치</small></div></div><div id="gameOverOverlay" class="overlay"><div class="overlay-panel"><p class="badge danger">지각!</p><h2>오늘도 늦었다…</h2><p>이번 기록 <strong id="finalScore">0</strong>점</p><button id="restartBtn" type="button">다시 뛰기</button></div></div></div>
       <div class="controls-note"><span>점프: Space / ↑ / 화면 터치</span><span>커피 +100 · 시계 = 잠깐 느려짐</span></div>
     </section>
+
+    <section class="content-card">
+      <h2>출근 지각왕은 어떤 게임인가요?</h2>
+      <p>출근 지각왕은 바쁜 아침 출근길을 소재로 만든 무료 브라우저 러닝 게임입니다. 별도의 설치나 회원가입 없이 PC와 모바일 브라우저에서 바로 플레이할 수 있습니다. 달리는 직장인을 조작해 물웅덩이, 공사 시설물, 킥보드 같은 장애물을 피하고 가능한 멀리 달리며 최고 점수에 도전하는 것이 목표입니다.</p>
+      <h2>게임 방법</h2>
+      <p>PC에서는 Space 키 또는 ↑ 방향키를 누르면 점프합니다. 모바일에서는 게임 화면을 터치하면 점프합니다. 장애물을 안전하게 연속으로 통과하면 콤보 점수를 얻을 수 있고, 커피를 획득하면 보너스 점수, 시계 아이템을 획득하면 잠시 게임 속도가 느려집니다. 달리는 도중에는 출근 러시나 소나기 같은 랜덤 이벤트와 특수 장애물이 등장할 수 있습니다.</p>
+      <h2>기록을 높이는 팁</h2>
+      <p>장애물이 보이자마자 무조건 점프하기보다 장애물의 위치와 캐릭터의 착지 시점을 함께 보는 것이 중요합니다. 아이템을 얻으려고 무리하게 움직이기보다는 생존을 우선하고, 연속으로 장애물을 통과해 콤보를 유지하면 점수를 더 빠르게 올릴 수 있습니다. 최고 기록은 현재 사용 중인 브라우저에 저장됩니다.</p>
+    </section>
+
+    <section class="content-card info-grid">
+      <div><h2>사이트 소개</h2><p>출근 지각왕은 짧은 시간에 가볍게 즐길 수 있는 웹게임을 제공하기 위해 운영되는 개인 웹 프로젝트입니다. 게임의 기능과 난이도는 플레이 경험을 개선하기 위해 지속적으로 조정될 수 있습니다.</p></div>
+      <div><h2>문의</h2><p>게임 이용 중 오류나 개선 의견이 있다면 프로젝트의 GitHub 저장소를 통해 의견을 남길 수 있습니다.</p><p><a href="https://github.com/studio-on-lab/late-for-work-game" rel="noopener noreferrer">출근 지각왕 GitHub 저장소</a></p></div>
+    </section>
+
+    <section class="content-card legal" id="privacy">
+      <h2>개인정보처리방침</h2>
+      <p>출근 지각왕은 게임 플레이를 위해 이름, 전화번호, 이메일 등의 개인정보를 직접 입력받거나 회원가입 기능을 운영하지 않습니다. 최고 점수는 이용자의 기기 브라우저 저장공간(localStorage)에 저장되며 서버로 직접 전송하지 않습니다.</p>
+      <p>향후 광고 또는 방문 통계 서비스가 적용될 경우 해당 외부 서비스 제공자가 쿠키 또는 유사 기술을 사용할 수 있습니다. 외부 서비스가 실제 적용되는 경우 이 방침에 관련 내용을 추가하고 필요한 고지 및 선택 수단을 제공합니다.</p>
+      <p>최종 업데이트: 2026년 9월 14일</p>
+    </section>
+
+    <footer class="site-footer"><a href="#privacy">개인정보처리방침</a><span>·</span><a href="https://github.com/studio-on-lab/late-for-work-game" rel="noopener noreferrer">문의</a><span>·</span><span>© 2026 출근 지각왕</span></footer>
   </main>
   <script src="game.js"></script>
 </body>
