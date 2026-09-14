@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="출근길 장애물을 피해 회사에 늦지 않게 달려보세요. PC와 모바일에서 즐기는 간단한 점프 러닝 게임입니다." />
+  <title>출근 지각왕</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="game-card" aria-label="출근 지각왕 게임">
+      <header class="topbar"><div><p class="eyebrow">1분 순삭 출근 러닝게임</p><h1>출근 지각왕</h1></div><div class="scoreboard" aria-live="polite"><div><span>점수</span><strong id="score">0</strong></div><div><span>최고</span><strong id="bestScore">0</strong></div></div></header>
+      <div class="game-wrap">
+        <canvas id="gameCanvas" width="960" height="540" aria-label="출근 지각왕 게임 화면"></canvas>
+        <div id="startOverlay" class="overlay visible"><div class="overlay-panel"><p class="badge">08:59</p><h2>지각 1분 전!</h2><p>장애물을 점프로 피하고<br />커피를 먹어 보너스 점수를 챙기세요.</p><button id="startBtn" type="button">출근 시작</button><small>PC: Space / ↑ · 모바일: 화면 터치</small></div></div>
+        <div id="gameOverOverlay" class="overlay"><div class="overlay-panel"><p class="badge danger">지각!</p><h2>오늘도 늦었다…</h2><p>이번 기록 <strong id="finalScore">0</strong>점</p><button id="restartBtn" type="button">다시 뛰기</button></div></div>
+      </div>
+      <div class="controls-note"><span>점프: Space / ↑ / 화면 터치</span><span>커피 +100 · 시계 = 잠깐 느려짐</span></div>
+    </section>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
